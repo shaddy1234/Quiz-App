@@ -26,7 +26,7 @@ function App() {
   const fetchQuestions = async () => {
     try {
       const response = await axios.get(
-        `https://opentdb.com/api.php?amount=5&type=multiple&category=${selectedCategory}`
+        `https://opentdb.com/api.php?amount=10&type=multiple&category=${selectedCategory}`
       );
       setQuestions(response.data.results);
     } catch (error) {
